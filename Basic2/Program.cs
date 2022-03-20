@@ -15,6 +15,9 @@ namespace Basic2
             SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
             swapTwoNumber.SwapNumbers();
 
+            Fibonacci fibonacci = new Fibonacci();
+            fibonacci.FibonacciSeries();
+
 
 
         }
