@@ -11,6 +11,10 @@ namespace Basic2
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome");
+
+            SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
+            swapTwoNumber.SwapNumbers();
+
         }
     }
 }
