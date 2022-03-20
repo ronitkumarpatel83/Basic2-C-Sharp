@@ -12,16 +12,17 @@ namespace Basic2
         {
             Console.WriteLine("Welcome");
 
-           // SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
-            //swapTwoNumber.SwapNumbers();
+            SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
+            swapTwoNumber.SwapNumbers();
 
-            //Fibonacci fibonacci = new Fibonacci();
-            //fibonacci.FibonacciSeries(); 
+            Fibonacci fibonacci = new Fibonacci();
+            fibonacci.FibonacciSeries(); 
            
             PrimeNumber primeNumber = new PrimeNumber();
             primeNumber.Prime();
 
-
+            ReverseNumber reverseNumber = new ReverseNumber();
+            reverseNumber.FindReverseofNumber();
 
 
 
