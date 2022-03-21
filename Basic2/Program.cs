@@ -10,22 +10,51 @@ namespace Basic2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome");
+            int choice,c=1;
+            while (c==1)
+            {
 
-            SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
-            swapTwoNumber.SwapNumbers();
-
-            Fibonacci fibonacci = new Fibonacci();
-            fibonacci.FibonacciSeries(); 
-           
-            PrimeNumber primeNumber = new PrimeNumber();
-            primeNumber.Prime();
-
-            ReverseNumber reverseNumber = new ReverseNumber();
-            reverseNumber.FindReverseofNumber();
+                Console.WriteLine("Welcome");
+                Console.Write("1.SwapTwoNumbers \n2.Fibonacci \n3.prime number \n4..Reverse number ");
+                Console.WriteLine("Enter any choice : ");
+                choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
 
 
+                switch (choice)
+                {
+                    case 1:
 
+                    SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
+                    swapTwoNumber.SwapNumbers();
+                    break;
+
+                    case 2:
+                    Fibonacci fibonacci = new Fibonacci();
+                    fibonacci.FibonacciSeries();
+                    break;
+
+                    case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
+                    primeNumber.Prime();
+                    break;
+
+                    case 4:
+                    ReverseNumber reverseNumber = new ReverseNumber();
+                    reverseNumber.FindReverseofNumber();
+                    break;
+
+                    default:
+                        Console.WriteLine("Please enter a valid number");
+                        break;
+
+                }
+                Console.WriteLine("\n press 1 to continue and press any for exit");
+                c = Convert.ToInt32(Console.ReadLine());
+
+            }
+
+            Console.Read();
         }
     }
 }
